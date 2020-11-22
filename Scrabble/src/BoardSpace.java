@@ -3,7 +3,8 @@ import javax.swing.JButton;
 
 /**
  * Class that represents a space on the board
- * @author Jacob
+ * 
+ * @author Jacob Brinlee
  *
  */
 

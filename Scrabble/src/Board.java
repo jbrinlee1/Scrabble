@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 /**
  * Class that represents the scrabble board
+ * 
  * @author Jacob Brinlee
  *
  */

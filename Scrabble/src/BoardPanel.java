@@ -15,7 +15,7 @@ import javax.swing.JPanel;
  * JPanel is a grid layout. The border is numbers that represents the row/column. The interior
  * is the board spaces in the board object in the game instance
  * 
- * @author Jacob
+ * @author Jacob Brinlee
  *
  */
 public class BoardPanel extends JPanel {

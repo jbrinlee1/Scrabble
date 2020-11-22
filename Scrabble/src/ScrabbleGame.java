@@ -160,7 +160,7 @@ public class ScrabbleGame {
 				} else { 
 					//Loop through all the words, if one is not a word then scorable is false;
 					for(String str : potWords) {
-						if(dictionary.check2(str.toLowerCase()) == false) {
+						if(dictionary.checkWord(str.toLowerCase()) == false) {
 							scorable = false;
 						}
 					}
