@@ -12,7 +12,6 @@ import javax.swing.JOptionPane;
 /**
  * Class that represents a Scrabble Game
  * 
- * 
  * User specifies the number of players
  * Players play to score specified by player
  * 
@@ -164,7 +163,6 @@ public class ScrabbleGame {
 						if(dictionary.check2(str.toLowerCase()) == false) {
 							scorable = false;
 						}
-					
 					}
 				}
 				
