@@ -8,9 +8,8 @@ public class ScrabbleGameRunner {
 	
 	public static void main(String args[]) {
 		
-		//Create game object
+		//Create and play game
 		ScrabbleGame game = new ScrabbleGame();
-		//Play that game
 		game.play();
 		
 	}

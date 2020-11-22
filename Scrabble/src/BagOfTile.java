@@ -4,7 +4,7 @@ import java.util.Random;
 /**
  * Class that represents the entire bag of tiles for the game. The players draw tiles from the bag of tiles.
  * 
- * @author Jacob
+ * @author Jacob Brinlee
  *
  */
 public class BagOfTile {

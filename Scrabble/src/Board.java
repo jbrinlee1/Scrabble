@@ -5,10 +5,9 @@ import java.util.Comparator;
 import javax.swing.JOptionPane;
 
 
-
 /**
  * Class that represents the scrabble board
- * @author Jacob
+ * @author Jacob Brinlee
  *
  */
 public class Board {
@@ -226,7 +225,6 @@ public class Board {
 		return board[row - 1][column - 1].removeTile();
 		
 	}
-	
 	
 	
 	/**
@@ -468,7 +466,6 @@ public class Board {
 		potentialWords = sortPotentialWords(potentialWords);
 		return removeDuplicates(potentialWords);
 	}
-
 
 	
 	/**

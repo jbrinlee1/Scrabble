@@ -10,7 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
- * Class that represents the entire Scrabble game
+ * Class that represents a Scrabble Game
+ * 
  * 
  * User specifies the number of players
  * Players play to score specified by player
@@ -20,18 +21,19 @@ import javax.swing.JOptionPane;
  */
 public class ScrabbleGame {
 	
-	private int numPlayers;
-	private int turnCounter;
-	private int scoreToWin;
-	private boolean isGameOver;
-	private boolean isTurnOver;
-	private Player[] players;
-	private Board board;
-	private BagOfTile bagOfTile;
-	private Dictionary dictionary;
-	private Scorer scorer;
-	private GUI gui;
-	private JFrame frame;
+	
+	private int numPlayers;			//number of player - entered by user
+	private int turnCounter;		//keeps track of players turn - set randomly to start
+	private int scoreToWin;			//score to win - entered by user
+	private boolean isGameOver;		//set to true when one players score > score to win
+	private boolean isTurnOver;		//set to true when user wants to end their turn
+	private Player[] players;		//array of players
+	private Board board;			//board used for game instance
+	private BagOfTile bagOfTile;	//bag of tile for game instance
+	private Dictionary dictionary;	//dictionary used for game instance - set by programmer
+	private Scorer scorer;			//scorer object that calculates and awards points
+	private GUI gui;				//GUI
+	private JFrame frame;			//Frame that pops up to get user input.
 
 	
 	/**
@@ -52,7 +54,6 @@ public class ScrabbleGame {
 		this.createPlayers();
 		this.getScoreToWin();
 
-		
 	}
 	
 	/**
@@ -62,7 +63,7 @@ public class ScrabbleGame {
 		
 		//////////////////////////////////////////////// GAME VARIABLES //////////////////////////////////////////////////
 		int playOrReplace;								
-		int numTilesRemoved;
+		int numTilesRemoved;				
 		int tileToPlayResponse;
 		int tileToRemoveResponse;
 		
@@ -218,7 +219,7 @@ public class ScrabbleGame {
 
 			} else {
 				
-				///////////////////////////////////////////////// REPLACE TILES BLOCK OF CODE ///////////////////////////////////////////////
+		///////////////////////////////////////////////// REPLACE TILES BLOCK OF CODE ///////////////////////////////////////////////
 				
 				//Counter for tiles removed
 				numTilesRemoved = 0;
@@ -276,6 +277,11 @@ public class ScrabbleGame {
 		//Game loop is over, exit the program
 		gui.dispatchEvent(new WindowEvent(gui, WindowEvent.WINDOW_CLOSING));
 	}
+	
+	
+	
+	
+	//////////////////////////////////////////// HELPER FUNCTIONS ////////////////////////////////////////////////////////////////////////
 	
 	/**
 	 * Method used to get the qty of players and players names who will player the game
