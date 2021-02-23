@@ -18,4 +18,3 @@ correct game logic runs. When the player is done with their turn, they select th
 are replaced, the display is updated and the next player's turn begins! Once one player's score excides the score to win,
 the game ends!
 
-Future improvements: 
